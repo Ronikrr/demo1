@@ -4,8 +4,18 @@ import Award_2 from "../../assets/img/award-bg-new.svg";
 import Award_1 from "../../assets/img/award-bg-mob-new.svg";
 import Monkey_glass from "../../assets/img/award-monkey-glass.svg";
 import Monkey from "../../assets/img/monkys1.svg";
-import layer from '../../assets/img/Layer 2.svg';
+
+import Award_imge1 from '../../assets/img/Awards-image1.png'
+import Award_imge2 from '../../assets/img/Awards-image2.png'
+import Award_imge3 from '../../assets/img/Awards-image3.png'
+import Award_imge4 from '../../assets/img/Awards-image4.png'
+import Award_imge5 from '../../assets/img/Awards-image5.png'
+import Award_imge6 from '../../assets/img/Awards-image6.png'
+import Award_imge7 from '../../assets/img/Awards-image7.png'
 import Award_imge8 from '../../assets/img/Awards-image8.png'
+import Award_imge9 from '../../assets/img/Awards-image9.png'
+import Award_imge10 from '../../assets/img/Awards-image10.png'
+import Award_imge11 from '../../assets/img/Awards-image11.png'
 import man from '../../assets/img/award-man.svg'
 import gsap from 'gsap';
 import award_logo from '../../assets/img/Awards-Manipal-logo.png'
@@ -60,13 +70,105 @@ const Slider_box = () => {
     const slide_data = [
         {
             id: 1,
-            heading: "Nothing Short(y) <br /> of Amazing!",
-            src: Award_imge8,
+            heading: "Nothing Short(y)  of Amazing!",
+            src: Award_imge1,
             head_name: 'SHORTYS 23',
             dis_head: 'Audience Honour -',
             dis: 'Physical & Digital Convergence',
             logo: award_logo,
         }
+        // , {
+        //     id: 2,
+        //     heading: "Nothing Short(y)  of Amazing!",
+        //     src: Award_imge2,
+        //     head_name: 'SHORTYS 23',
+        //     dis_head: 'Audience Honour -',
+        //     dis: 'Physical & Digital Convergence',
+        //     logo: award_logo,
+        // }
+        // , {
+        //     id: 3,
+        //     heading: "Nothing Short(y)  of Amazing!",
+        //     src: Award_imge3,
+        //     head_name: 'SHORTYS 23',
+        //     dis_head: 'Audience Honour -',
+        //     dis: 'Physical & Digital Convergence',
+        //     logo: award_logo,
+        // }
+        // , {
+        //     id: 4,
+        //     heading: "Nothing Short(y)  of Amazing!",
+        //     src: Award_imge4,
+        //     head_name: 'SHORTYS 23',
+        //     dis_head: 'Audience Honour -',
+        //     dis: 'Physical & Digital Convergence',
+        //     logo: award_logo,
+        // }
+        // ,
+        // {
+        //     id: 5,
+        //     heading: "Nothing Short(y)  of Amazing!",
+        //     src: Award_imge5,
+        //     head_name: 'SHORTYS 23',
+        //     dis_head: 'Audience Honour -',
+        //     dis: 'Physical & Digital Convergence',
+        //     logo: award_logo,
+        // }
+        // , {
+        //     id: 6,
+        //     heading: "Nothing Short(y)  of Amazing!",
+        //     src: Award_imge6,
+        //     head_name: 'SHORTYS 23',
+        //     dis_head: 'Audience Honour -',
+        //     dis: 'Physical & Digital Convergence',
+        //     logo: award_logo,
+        // }
+        // , {
+        //     id: 7,
+        //     heading: "Nothing Short(y)  of Amazing!",
+        //     src: Award_imge7,
+        //     head_name: 'SHORTYS 23',
+        //     dis_head: 'Audience Honour -',
+        //     dis: 'Physical & Digital Convergence',
+        //     logo: award_logo,
+        // }
+        // , {
+        //     id: 8,
+        //     heading: "Nothing Short(y)  of Amazing!",
+        //     src: Award_imge8,
+        //     head_name: 'SHORTYS 23',
+        //     dis_head: 'Audience Honour -',
+        //     dis: 'Physical & Digital Convergence',
+        //     logo: award_logo,
+        // }
+        // , {
+        //     id: 9,
+        //     heading: "Nothing Short(y)  of Amazing!",
+        //     src: Award_imge9,
+        //     head_name: 'SHORTYS 23',
+        //     dis_head: 'Audience Honour -',
+        //     dis: 'Physical & Digital Convergence',
+        //     logo: award_logo,
+        // }
+        // , {
+        //     id: 10,
+        //     heading: "Nothing Short(y)  of Amazing!",
+        //     src: Award_imge10,
+        //     head_name: 'SHORTYS 23',
+        //     dis_head: 'Audience Honour -',
+        //     dis: 'Physical & Digital Convergence',
+        //     logo: award_logo,
+        // }
+        // , {
+        //     id: 11,
+        //     heading: "Nothing Short(y)  of Amazing!",
+        //     src: Award_imge11,
+        //     head_name: 'SHORTYS 23',
+        //     dis_head: 'Audience Honour -',
+        //     dis: 'Physical & Digital Convergence',
+        //     logo: award_logo,
+        // }
+
     ]
     const CustomArrow = ({ className, style, onClick, icon }) => {
         const isMobile = window.innerWidth < 640;
@@ -162,30 +264,30 @@ const Slider_box = () => {
                         <Slider {...desktop}>
                             {slide_data.map((slide) => (
 
-                                <div className="w-full">
-                                    <div className="w-full" key={slide.id} >
+                                <div className="flex w-full">
+                                    <div className="flex flex-wrap w-full" key={slide.id} >
                                         <div key={slide.id} className="flex-row items-start justify-center w-full pt-10 pb-0 pl-10 pr-10 desktop_lenth">
                                             <div className="w-6/12">
                                                 <div className=" pt-[10vw] pl-[50px] text-left h-full" >
-                                                    <span className=" text-[2.8rem] font-extrabold text-[#030200]" > Nothing Short(y) <br /> of Amazing!</span>
+                                                    <span className=" text-[2.8rem] font-extrabold text-[#030200]" > {slide.heading} </span>
                                                 </div>
                                             </div>
                                             <div className="flex justify-center w-6/12">
                                                 <div className="w-full">
-                                                    <img src={Award_imge8} className="w-full h-full object-fit " alt="Nothing Short(y) <br /> of Amazing!" />
+                                                    <img src={slide.src} className="w-full h-full object-fit " alt="Nothing Short(y) <br /> of Amazing!" />
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="desktop_lenth flex-col box_data space-y-6 px-[100px] w-full pb-[100px] h-full">
                                             <div className="w-4/12">
-                                                <span>SHORTY'S 23</span>
+                                                <span>{slide.head_name}</span>
                                             </div>
                                             <div className="w-4/12">
-                                                <h6>Audience Honour -</h6>
-                                                <span>Physical & Digital Convergence</span>
+                                                <h6>{slide.dis_head}</h6>
+                                                <span>{slide.dis}</span>
                                             </div>
                                             <div className="w-4/12">
-                                                <img src={award_logo} className="w-[100px]" alt="" />
+                                                <img src={slide.logo} className="w-[100px]" alt="" />
                                             </div>
                                             <div className="w-4/12"></div>
                                         </div>
