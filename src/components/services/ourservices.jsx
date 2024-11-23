@@ -5,7 +5,8 @@ import service_1_gif from '../../assets/img/sevice/01-service-gif-social-media-c
 const service_page = [
     {
         id: 1,
-        title: "Creative & Digital Strategy",
+        title: "Creative &",
+        title_1: " Digital Strategy",
         discription: "We marinate strategies that best suit your business objectives by sprinkling the perfect salts of creativity and research.",
         src: service_1,
         gif: service_1_gif,
@@ -111,11 +112,11 @@ const Ourservices = () => {
                             {index % 2 === 0 ? (
                                 <>
                                     <ImageSection src={sec.src} gif={sec.gif} />
-                                    <TextSection title={sec.title} discription={sec.discription} isReversed={true} />
+                                    <TextSection title={sec.title} title_1={sec.title_1} discription={sec.discription} isReversed={true} />
                                 </>
                             ) : (
                                 <>
-                                    <TextSection title={sec.title} discription={sec.discription} isReversed={false} />
+                                        <TextSection title={sec.title} title_1={sec.title_1} discription={sec.discription} isReversed={false} />
                                     <ImageSection src={sec.src} gif={sec.gif} />
                                 </>
                             )}
@@ -128,15 +129,18 @@ const Ourservices = () => {
     )
 }
 
-const TextSection = ({ title, discription, isReversed }) => (
-    <div className={`w-6/12 pt-[1rem] ${isReversed ? 'pl-[1rem]' : 'pr-[1rem]'} space-y-[0.5rem]`}>
-        <span className='text-[24px] font-extrabold leading-[1.2]'>{title}</span>
+const TextSection = ({ title, discription, title_1, isReversed }) => (
+    <div className={`w-full md:w-6/12 pt-[1rem] ${isReversed ? 'pl-[1rem]' : 'pr-[1rem]'} space-y-[0.5rem]`}>
+        <div className="text-center  md:text-left">
+            <span className='text-[24px] font-extrabold leading-[1.2]'>{title}</span>
+            <span className='text-[24px] font-extrabold leading-[1.2]'>{title}</span>
+        </div>
         <p className='text-[18px]'>{discription}</p>
     </div>
 );
 
 const ImageSection = ({ src, gif }) => (
-    <div className="w-6/12 px-[1rem] pt-[1rem]">
+    <div className="w-full md:w-6/12 px-[1rem] pt-[1rem]">
         <div className="relative group service_imge_wrap">
             <img src={src} className='w-full h-auto group-hover:relative group-hover:z-0' alt="Service" />
             <img src={gif} className='absolute top-0 block w-full transition-opacity pointer-events-none group-hover:transition-opacity -z-10 group-hover:z-10' alt="Service GIF" />
