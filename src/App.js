@@ -8,6 +8,7 @@ import Footer from './components/footer/footer';
 import Header from './components/header/header';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Ourservices from './components/services/ourservices';
+import Ourwork from './pages/ourwork';
 function App() {
   return (
     <>
@@ -18,6 +19,8 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/services' element={<Ourservices />} />
+          <Route path='/ourwork' element={<Ourwork />} />
+
         </Routes>
         <Footer />
       </Router>
