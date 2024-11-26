@@ -37,7 +37,7 @@ const Delight = () => {
                             <span className='text-[32px] md:text-[60px] font-bold' >Customer Delight
                             </span>
                         </div>
-                        <div className="text-center wrap pl-[1rem] relative ">
+                        <div className="text-center wrap md:pl-[1rem] relative ">
                             <p className='py-[1rem] text-[24px] font-extrabold' >We make the customers orgasm when we lay out our ideas and creatives in front of them.</p>
                             <p className='py-[1rem] text-[18px]  ' >At Social Panga, we are driven by a strong innate desire to delight the customer to an <br />extent that they want to give us virtual hugs.</p>
                             <p className='py-[1rem] text-[18px] ' >BTW, we live for occasional fatty foods, intoxicating liquids, and jalebis (yes, we’re a <br />bunch of nice kids!)</p>
