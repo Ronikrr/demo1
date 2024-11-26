@@ -2,7 +2,7 @@ import React from 'react'
 
 const Awards = () => {
     return (
-        <div>Awards</div>
+        <div className='pt-[100px]' >Awards</div>
     )
 }
 

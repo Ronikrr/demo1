@@ -9,6 +9,7 @@ import Header from './components/header/header';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Ourservices from './components/services/ourservices';
 import Ourwork from './pages/ourwork';
+import Awards from './pages/awards';
 function App() {
   return (
     <>
@@ -20,6 +21,7 @@ function App() {
           <Route path='/about' element={<About />} />
           <Route path='/services' element={<Ourservices />} />
           <Route path='/ourwork' element={<Ourwork />} />
+          <Route path='/awards' element={<Awards />} />
 
         </Routes>
         <Footer />
