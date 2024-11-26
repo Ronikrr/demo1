@@ -253,7 +253,7 @@ const Slider_box = () => {
     }
 
     return (
-        <section id="slider-section " className="h-full relative pt-[100px] ">
+        <section id="slider-section " className="h-full relative md:pt-[100px] ">
             <div className="absolute imges_calss -z-10 w-[95%] lg:w-[100%] xl:w-[95%] top-[-15%] md:top-[15%] lg:top-[50%] left-[3%]  lg:left-[50%]  h-full cratives ">
                         <img src={Award_2} className="bg_box" alt="Award Background 2" />
                         <img src={Award_1} className="bg_box_thow" alt="Award Background 1" />
@@ -302,7 +302,7 @@ const Slider_box = () => {
                             {slide_data.map((slide) => (
 
                                 <>
-                                    <div key={slide.id} className="flex-col items-center justify-center w-full pt-10 moblie_size ">
+                                    <div key={slide.id} className="flex-col items-center justify-center w-full md:pt-10 moblie_size ">
                                         <div className="w-full py-[25px]">
                                             <div className="h-full text-center" >
                                                 <span className=" text-[1.2rem] font-extrabold text-[#030200]" > Nothing Short(y) <br /> of Amazing!</span>
