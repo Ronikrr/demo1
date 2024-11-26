@@ -74,14 +74,15 @@
   .slick-slider {
     @apply w-full !important;
   }
+
   .slick-arrow button::before {
     color: black !important;
   }
   .box_absolute {
     transform: translate(-50%, 65%);
   }
-  .data_cla{
-     font-family: "Montserrat", sans-serif;
+  .data_cla {
+    font-family: "Montserrat", sans-serif;
   }
   #slider-section .slick-prev:before,
   .slick-next:before {

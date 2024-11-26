@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const links = [
@@ -18,6 +18,7 @@ const Header = () => {
     const [isExpanded, setIsExpanded] = useState(false);
     const location = useLocation();
 
+
     const toggleMenu = () => {
         setIsExpanded((prev) => !prev);
         console.log("Menu is now", !isExpanded ? "expanded" : "collapsed");
@@ -32,7 +33,7 @@ const Header = () => {
 
     return (
         <header className="bg-white header data_cla">
-            <nav className="fixed top-0 z-50 w-full mx-auto overflow-hidden bg-white">
+            <nav className="fixed top-0 z-50 w-full mx-auto overflow-hidden bg-white ">
                 <div className="container flex flex-col items-center justify-between p-4 mx-auto md:flex-row">
                     <div className="flex items-center justify-between w-full md:w-4/12">
                         <Link className="text-lg font-semibold" to="/">

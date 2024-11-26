@@ -7,14 +7,14 @@ import branding_5 from "../../assets/img/ourwork/branding/SP-website-design-proj
 import branding_6 from "../../assets/img/ourwork/branding/SP-website-design-project-0314.png";
 import branding_7 from "../../assets/img/ourwork/branding/SP-website-design-project-0315.png";
 import branding_8 from "../../assets/img/ourwork/branding/SP-website-design-project-0316.png";
-import branding_9 from "../../assets/img/ourwork/branding/SP-website-design-project-032.png";
-import branding_10 from "../../assets/img/ourwork/branding/SP-website-design-project-033.png";
-import branding_11 from "../../assets/img/ourwork/branding/SP-website-design-project-034.png";
-import branding_12 from "../../assets/img/ourwork/branding/SP-website-design-project-035.png";
-import branding_13 from "../../assets/img/ourwork/branding/SP-website-design-project-036.png";
-import branding_14 from "../../assets/img/ourwork/branding/SP-website-design-project-037.png";
-import branding_15 from "../../assets/img/ourwork/branding/SP-website-design-project-038.png";
-import branding_16 from "../../assets/img/ourwork/branding/SP-website-design-project-038.png";
+import creative_1 from '../../assets/img/ourwork/creative/Bajaj_CreativeHub.png';
+import creative_2 from '../../assets/img/ourwork/creative/IKEA-Thumbnail-Website-template-1.jpg';
+import creative_3 from '../../assets/img/ourwork/creative/Juski_CreativeHub-1.png';
+import creative_4 from '../../assets/img/ourwork/creative/KY_OneStateManyWorlds_CreativeHub.png';
+import creative_5 from '../../assets/img/ourwork/creative/KarnatakaTourism_SocialMedia_CreativeHub.png';
+import creative_6 from '../../assets/img/ourwork/creative/Manipal_DocwithSign_CreativeHub.jpg';
+import creative_7 from '../../assets/img/ourwork/creative/Manipal_SocialMedia_CreativeHub.jpg';
+import creative_8 from '../../assets/img/ourwork/creative/SP-website-design-project-0341.jpg'
 const Ourworkapge = () => {
     const [selectedCategory, setSelectedCategory] = useState("all");
 
@@ -36,16 +36,17 @@ const Ourworkapge = () => {
         { id: 4, src: branding_4, category: "branding" },
         { id: 5, src: branding_5, category: "branding" },
         { id: 6, src: branding_6, category: "branding" },
-        { id: 1, src: branding_7, category: "branding" },
-        { id: 2, src: branding_8, category: "branding" },
-        { id: 3, src: branding_9, category: "branding" },
-        { id: 4, src: branding_10, category: "branding" },
-        { id: 5, src: branding_11, category: "branding" },
-        { id: 6, src: branding_12, category: "branding" },
-        { id: 3, src: branding_13, category: "branding" },
-        { id: 4, src: branding_14, category: "branding" },
-        { id: 5, src: branding_15, category: "branding" },
-        { id: 6, src: branding_16, category: "branding" },
+        { id: 7, src: branding_7, category: "branding" },
+        { id: 8, src: branding_8, category: "branding" },
+        { id: 9, src: creative_1, category: "creative" },
+        { id: 10, src: creative_2, category: "creative" },
+        { id: 11, src: creative_3, category: "creative" },
+        { id: 12, src: creative_4, category: "creative" },
+        { id: 13, src: creative_5, category: "creative" },
+        { id: 14, src: creative_6, category: "creative" },
+        { id: 15, src: creative_7, category: "creative" },
+        { id: 16, src: creative_8, category: "creative" },
+
     ];
     return (
         <div className="pt-[105px] data_cla">
@@ -54,9 +55,9 @@ const Ourworkapge = () => {
                     <div className="flex items-center flex-col md:flex-row md:pt-[1rem] p-0 md:px-[1rem] w-full">
                         <div className="w-full text-center md:text-left  md:w-6/12 pt-[1rem]">
                             <h1 className="text-[30px] lg:text-[60px] capitalize leading-[1.2] font-extrabold">
-                                {" "}
+
                                 Our Brand <br />
-                                Raids{" "}
+                                Raids
                             </h1>
                         </div>
                         <div className="w-full text-center md:text-left  md:w-6/12 pt-[1rem]">
@@ -75,60 +76,34 @@ const Ourworkapge = () => {
                 <div className="gallery-container">
                     {/* Filter Buttons */}
                     <div className="container mx-auto">
-                        <div className="block text-center mb-[40px] mt-[20px] px-[32px] cursor-pointer">
-                            <button
-                                className="group  px-[7px] font-bold uppercase text-[20px]"
-                                onClick={() => handleCategoryChange("all")}
-                            >
-                                <span className="after:w-0 group-hover:after:w-full super_font" > All</span>
-                            </button>
-                            <button
-                                className="group  px-[7px] font-bold uppercase text-[20px]"
-                                onClick={() => handleCategoryChange("branding")}
-                            >
-                                <span className="after:w-0 group-hover:after:w-full super_font" > branding</span>
-                            </button>
-                            <button
-                                className="group  px-[7px] font-bold uppercase text-[20px]"
-                                onClick={() => handleCategoryChange("casestudies")}
-                            >
-                                <span className="after:w-0 group-hover:after:w-full super_font" > Case Studies</span>
-                            </button>
-                            <button
-                                className="group  px-[7px] font-bold uppercase text-[20px]"
-                                onClick={() => handleCategoryChange("creativehub")}
-                            >
-                                <span className="after:w-0 group-hover:after:w-full super_font" > creative hub</span>
-                            </button>
-                            <button
-                                className="px-[7px] font-bold uppercase text-[20px]"
-                                onClick={() => handleCategoryChange("performancemarketing")}
-                            >
-                                <span className="super_font" > Performance Marketing</span>
-                            </button>
-                            <button
-                                className="group  px-[7px] font-bold uppercase text-[20px]"
-                                onClick={() => handleCategoryChange("production")}
-                            >
-                                <span className="after:w-0 group-hover:after:w-full super_font" > production</span>
-                            </button>
-                            <button
-                                className="group  px-[7px] font-bold uppercase text-[20px]"
-                                onClick={() => handleCategoryChange("ui/ux")}
-                            >
-                                <span className="after:w-0 group-hover:after:w-full super_font" > ui/ux</span>
-                            </button>
+                        <div className="block text-center mb-[40px] mt-[20px] md:px-[32px] cursor-pointer">
+                            {["all", "branding", "casestudies", "creative", "performancemarketing", "production", "ui/ux"].map((category) => (
+                                <button
+                                    key={category}
+                                    className={`group text-center relative visited:text-purple-400 px-[10px] font-bold uppercase text-[20px] transition-all duration-300 ${selectedCategory === category ? "underline decoration-[#cc121c] decoration-4 underline-offset-8" : ""
+                                        }`}
+                                    onClick={() => handleCategoryChange(category)}
+                                >
+                                    <span className="relative z-10">{category.replace(/([A-Z])/g, ' $1').trim()}</span>
+                                    <span className="absolute left-0 top-full w-full border-b-4 border-[#cc121c] opacity-0 transform scale-0 transition-transform duration-300 ease-in-out group-hover:opacity-100 group-hover:scale-100"></span>
+                                </button>
+                            ))}
+
                         </div>
                     </div>
 
+
                     {/* Displaying Filtered Images */}
-                    <div className="flex w-[1600px] mx-auto    flex-wrap gallery-images ">
+                    <div className="flex w-full md:w-[1600px] mx-auto    flex-wrap gallery-images ">
                         {filterImages(selectedCategory).map((image) => (
                             <div
                                 key={image.id}
-                                className="image-item w-[25%] flex justify-center mb-[25px] "
+                                className="image-item w-full md:w-[25%] mb-[25px]  flex justify-center  "
                             >
-                                <img src={image.src} alt={image.category} />
+                                <div className="w-full md:w-11/12 ">
+
+                                    <img src={image.src} className="object-cover w-full h-full aspect-square" alt={image.category} />
+                                </div>
                             </div>
                         ))}
                     </div>
