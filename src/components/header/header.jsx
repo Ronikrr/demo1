@@ -154,16 +154,27 @@ const Header = () => {
                                     <Link
                                         to={item.path}
                                         onClick={scrollToTop}
-                                        className={`flex flex-col items-center font-medium uppercase ${location.pathname === item.path ? "text-blue-600 font-extrabold" : "text-black"
+                                        className={`flex flex-col items-center uppercase text-black ${location.pathname === item.path ? "font-extrabold" : "font-medium"
                                             } group-hover:font-extrabold`}
                                     >
-                                        <img src={item.src} className="w-[50px] h-[50px] md:w-[80px] opacity-0 group-hover:opacity-100" alt={`Icon for ${item.pagename}`} />
-                                        {item.pagename}
+                                        <img
+                                            src={item.src}
+                                            className={`w-[50px] h-[50px] md:w-[80px] ${location.pathname === item.path ? "opacity-100" : "opacity-0 group-hover:opacity-100"
+                                                }`}
+                                            alt={`Icon for ${item.pagename}`}
+                                        />
+                                        <span
+                                            className={`uppercase ${location.pathname === item.path ? "font-extrabold" : "font-medium"
+                                                } group-hover:font-extrabold`}
+                                        >
+                                            {item.pagename}
+                                        </span>
                                     </Link>
                                 </li>
                             ))}
                         </ul>
                     </div>
+
                 </div>
             </nav>
         </header>
