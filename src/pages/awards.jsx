@@ -1,5 +1,5 @@
 import React from 'react'
-import Awardssection from '../components/awardssection'
+import Awardssection from '../components/awardsection/awardssection'
 import Maintitle from '../components/maintitle'
 const Awards = () => {
     Maintitle('Social panga - awards')
