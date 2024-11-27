@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="https://socialpanga.com/wp-content/themes/socialpanga/assets/images/favicons/apple-touch-icon.png" />
+    <link rel="icon" id="fav"
+      href="https://socialpanga.com/wp-content/themes/socialpanga/assets/images/favicons/apple-touch-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -39,5 +40,22 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+      <script>
+
+        function changeFavicon(iconUrl) {
+          const fav = document.getElementById('fav');
+          fav.href = iconUrl
+        }
+        document.addEventListener("visibilitychange", () => {
+          if (document.hidden) {
+            changeFavicon('https://www.cambridge.org/elt/blog/wp-content/uploads/2019/07/Sad-Face-Emoji.png')
+            document.title = "Hey, come back!";
+          }
+          else {
+            changeFavicon('https://socialpanga.com/wp-content/themes/socialpanga/assets/images/favicons/apple-touch-icon.png')
+            document.title = "Socialpanga";
+          }
+        })
+      </script>
   </body>
 </html>
