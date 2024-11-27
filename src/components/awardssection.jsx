@@ -22,7 +22,7 @@ const Awardssection = () => {
                     </div>
                 </div>
             </div>
-        </section >
+        </section>
     )
 }
 
