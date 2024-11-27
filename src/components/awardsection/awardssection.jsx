@@ -1,5 +1,5 @@
 import React from 'react'
-import Awards_img from '../assets/img/awards/main-awards-banner-img-1.jpg'
+import Awards_img from '../../assets/img/awards/main-awards-banner-img-1.jpg'
 
 const Awardssection = () => {
     return (
